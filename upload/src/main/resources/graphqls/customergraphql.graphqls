@@ -1,11 +1,17 @@
 type Customer {
 	customerId: ID!,
-	customerName: String,
+	customerName: FullName,
 	dob: String,
 	genderType:String,
     addressList: [Address!]
 }
 
+type FullName{
+  firstName: String,
+  middleName: String,
+  lastName: String
+
+}
 
 type Address {
 	addressId: ID!,
